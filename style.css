@@ -20,6 +20,7 @@
     margin: 0;
     animation: fadein 2s;
     background-color: var(--white);
+    overflow-x: hidden; 
 }
 @keyframes fadein {
     from{
