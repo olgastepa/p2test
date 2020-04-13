@@ -43,32 +43,38 @@
 </nav>
 
 <div class="intro index-page flex-center">
-    <h1 class="heading-one">Всегда дорого цените свое время</h1>
+    <h1 class="heading-one">Слоган</h1>
 </div>
+
+<div class="line"></div>
+<h2 class="heading-two">Всегда дорого цените свое время</h2>
 
 <div class="clock-container">
     <div class="clock-box">
-        <h5 class="heading-three">София</h5>
-        <div id="clock"></div>
-    </div>
-
-    <div class="clock-box">
-        <h5 class="heading-three">Москва</h5>
-        <div id="clockmoscow"></div>
-    </div>
-
-    <div class="clock-box">
-        <h5 class="heading-three">Лондон</h5>
+        <h5 class="heading-three">Нью-Йорк</h5>
         <div id="clockNY"></div>
     </div>
 
     <div class="clock-box">
-        <h5 class="heading-three">Гонконг</h5>
-        <div id="clockfourHK"></div>
+        <h5 class="heading-three">Лондон</h5>
+        <div id="clockLondon"></div>
     </div>
 
-    
-    
+    <div class="clock-box">
+        <h5 class="heading-three">София</h5>
+        <div id="clockSofia"></div>
+    </div>
+
+    <div class="clock-box">
+        <h5 class="heading-three">Гонконг</h5>
+        <div id="clockHK"></div>
+    </div>
+
+    <div class="clock-box">
+        <h5 class="heading-three">Дубай</h5>
+        <div id="clockDubai"></div>
+    </div>
+ 
     
 </div>
 
@@ -91,10 +97,9 @@
       var date = new Date(); /* creating object of Date class */
       var hour = date.getHours();
       var min = date.getMinutes();
-      var sec = date.getSeconds();
       hour = updateTime(hour);
       min = updateTime(min);
-      document.getElementById("clock").innerText = hour + " : " + min; /* adding time to the div */
+      document.getElementById("clockNY").innerText = hour + " : " + min; /* adding time to the div */
         var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
     }
     
@@ -118,7 +123,7 @@
           var sec = date.getSeconds();
           hour = updateTime(hour);
           min = updateTime(min);
-          document.getElementById("clockmoscow").innerText = hour + " : " + min; /* adding time to the div */
+          document.getElementById("clockLondon").innerText = hour + " : " + min; /* adding time to the div */
             var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
         }
         
@@ -142,7 +147,7 @@
           var sec = date.getSeconds();
           hour = updateTime(hour);
           min = updateTime(min);
-          document.getElementById("clockfourHK").innerText = hour + " : " + min; /* adding time to the div */
+          document.getElementById("clockSofia").innerText = hour + " : " + min; /* adding time to the div */
             var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
         }
         
@@ -165,7 +170,7 @@
           var sec = date.getSeconds();
           hour = updateTime(hour);
           min = updateTime(min);
-          document.getElementById("clockNY").innerText = hour + " : " + min; /* adding time to the div */
+          document.getElementById("clockHK").innerText = hour + " : " + min; /* adding time to the div */
             var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
         }
         
@@ -180,3 +185,27 @@
         
         currentTime(); /* calling currentTime() function to initiate the process */
         </script>
+
+<script>
+    function currentTime() {
+      var date = new Date(); /* creating object of Date class */
+      var hour = date.getHours();
+      var min = date.getMinutes();
+      var sec = date.getSeconds();
+      hour = updateTime(hour);
+      min = updateTime(min);
+      document.getElementById("clockDubai").innerText = hour + " : " + min; /* adding time to the div */
+        var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
+    }
+    
+    function updateTime(k) {
+      if (k < 10) {
+        return "0" + k;
+      }
+      else {
+        return k;
+      }
+    }
+    
+    currentTime(); /* calling currentTime() function to initiate the process */
+    </script>

@@ -44,7 +44,7 @@
     background-size: cover;
 }
 .index-page {
-    background-image: url(assets/main-image.png);
+    background-image: url(assets/main-image.jpg);
 }
 .heading-one {
     color: var(--green);
@@ -92,11 +92,11 @@
 
 /*FINANCING PAGE*/
 .financing-page {
-    background-image: url(assets/financila-image.png);
+    background-image: url(assets/financial-image.jpg);
 }
 /*ABOUT*/
 .about-page {
-    background-image: url(assets/about-image.png);
+    background-image: url(assets/about-image.jpg);
 }
 .icons-container {
     width: 100vw;
@@ -136,7 +136,7 @@
 
 /*CONTACT PAGE*/
 .contact-page {
-    background-image: url(assets/contact-image.png);
+    background-image: url(assets/consultiong-image.jpg);
 }
 .contact-container {
     width: 65vw;
@@ -236,11 +236,11 @@ form {
   }
 /*CONSULTION PAGE*/
 .consulting-page {
-    background-image: url(assets/consultiong-image.png);
+    background-image: url(assets/consulting-image.jpg);
 } 
 /*INSTRUMENTS PAGE*/
 .instruments-page {
-    background-image: url(assets/instruments-image.png);
+    background-image: url(assets/instruments-image.jpg);
 }
 em {
     font-weight: 900;
@@ -331,7 +331,7 @@ footer {
 
 .footer-logo {
     display: block;
-    width: 170px;
+    width: 220px;
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -346,45 +346,67 @@ footer {
     font-family: 'Lora';
     color: var(--beige);
     background-color: var(--green);
-    font-size: 40px;
+    font-size: 26pt;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 
-    width: 250px;
+    width: 200px;
     margin: 20px;
   }
 
-  #clockmoscow {
+  #clockLondon {
     font-family: 'Lora';
     color: var(--beige);
     background-color: var(--green);
-    font-size: 40px;
+    font-size: 26pt;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 
-    width: 230px;
+    width: 200px;
     margin: 20px;
   }
   #clockNY {
     font-family: 'Lora';
     color: var(--beige);
     background-color: var(--green);
-    font-size: 40px;
+    font-size: 26pt;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 
-    width: 230px;
+    width: 200px;
     margin: 20px;
   }
-  #clockfourHK {
+  #clockSofia {
     font-family: 'Lora';
     color: var(--beige);
     background-color: var(--green);
-    font-size: 40px;
+    font-size: 26pt;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 
-    width: 230px;
+    width: 200px;
+    margin: 20px;
+  }
+  #clockHK {
+    font-family: 'Lora';
+    color: var(--beige);
+    background-color: var(--green);
+    font-size: 26pt;
+    text-align: center;
+    padding: 10px;
+
+    width: 200px;
+    margin: 20px;
+  }
+  #clockDubai {
+    font-family: 'Lora';
+    color: var(--beige);
+    background-color: var(--green);
+    font-size: 26pt;
+    text-align: center;
+    padding: 10px;
+
+    width: 200px;
     margin: 20px;
   }
 
@@ -394,7 +416,7 @@ footer {
       align-items: center;
       flex-wrap: wrap;
 
-      width: 80%;
+      width: 100%;
       margin: auto;
       margin-top: 50px;
   }
@@ -592,6 +614,7 @@ footer {
     align-items: center;
 
     border-bottom: 1px solid var(--beige);
+    overflow-y: hidden!important;
 }
 .lang-section {
     top: 20px;
