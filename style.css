@@ -136,7 +136,7 @@
 
 /*CONTACT PAGE*/
 .contact-page {
-    background-image: url(assets/consultiong-image.jpg);
+    background-image: url(assets/contact-image.jpg);
 }
 .contact-container {
     width: 65vw;
@@ -147,9 +147,6 @@
     flex-wrap: wrap;
 
     margin-top: 50px;
-}
-.contact-box {
-
 }
 .contact-detail {
     display: flex;
@@ -212,7 +209,6 @@ form {
   ::placeholder {
     color: var(--green);
   }
-  
   input[type=submit] {
     transition: -webkit-linear-gradient 3s ease;
   }
@@ -233,6 +229,12 @@ form {
     font-family: 'Lora';
     font-weight: 100;
     border: none;
+    margin-bottom: 5px;
+    letter-spacing: 2pt;
+    transition: 0.5s ease-in-out;
+  }
+  .form-button:hover {
+    box-shadow: 0 0 10px var(--beige);
   }
 /*CONSULTION PAGE*/
 .consulting-page {
@@ -304,6 +306,8 @@ em {
     font-family: 'Lora';
     text-align: left;
     margin: 0;
+    padding-left: 5px;
+    margin-right: 20px;
 }
 .description-list li {
     list-style-type: circle!important;
