@@ -139,11 +139,11 @@
     background-image: url(assets/contact-image.jpg);
 }
 .contact-container {
-    width: 65vw;
+    width: 70vw;
     margin: auto;
     height: auto;
 
-    justify-content: space-between!important;
+    justify-content: center;
     flex-wrap: wrap;
 
     margin-top: 50px;
@@ -545,7 +545,6 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-
     .contact-box {
         width: 100vw;
     }
